@@ -78,15 +78,18 @@ const Primary = () => {
             style={styles.button}
           >
             <Text style={styles.buttonText}>Record Video</Text>
+            
           </TouchableOpacity>
-          <TouchableOpacity
+          
+          {/* <TouchableOpacity
             onPress={handeStopVideo}
             style={[styles.button, styles.stopButton]}
           >
             <Text style={styles.buttonText}>Stop Video</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 50 }}>
+       
+        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 60 }}>
 
           {videoPath && (
             <Video source={{ uri: videoPath }} style={styles.video} />
@@ -98,6 +101,7 @@ const Primary = () => {
             <Text style={styles.buttonText}>Share</Text>
           </TouchableOpacity>
         </View>
+        {/* <Text style={{ color:'#000',}}>The video will take 5 second of time</Text> */}
       </View>
     </View>
   )
