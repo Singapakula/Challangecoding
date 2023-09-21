@@ -25,7 +25,8 @@ const Profileview = () => {
 
         <StatusBar translucent backgroundColor='transparent' barStyle={'light-content'} />
         <ImageBackground
-          source={{ uri: 'https://file.kreditings.com/uploads/preview/green-nature-cb-photo-editing-background-full-hd-11675951002arzfuw3nsq.jpg' }}
+         // source={{ uri: 'https://file.kreditings.com/uploads/preview/green-nature-cb-photo-editing-background-full-hd-11675951002arzfuw3nsq.jpg' }}
+          source={images.background}
           style={{ height: windowHeight + 50, width: windowWidth }} />
         <View style={{ flexDirection: 'row', position: 'absolute', marginTop: 20 }}>
           <Pressable style={{ top: 25 }}

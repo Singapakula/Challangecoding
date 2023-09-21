@@ -23,7 +23,7 @@ const skyimg3=require('@app/assets/images/skyimg3.png')
 const cancel=require('@app/assets/images/cancel.png')
 const email=require('@app/assets/images/email.png')
 const arrowback=require('@app/assets/images/arrowback.png')
-
+const background=require('@app/assets/images/background.png')
 
 
 export default {
@@ -50,5 +50,6 @@ export default {
   skyimg3,
   cancel,
   email,
-  arrowback
+  arrowback,
+  background
 };
