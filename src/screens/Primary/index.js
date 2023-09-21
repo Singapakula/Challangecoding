@@ -71,7 +71,7 @@ const Primary = () => {
             video={true}
           />
         )}
-
+<Text style={{ fontSize:15,fontWeight:'600',color:'#000',position:'absolute',marginTop:610,textAlign:'center',marginLeft:30}}>Please Press below BUTTON and wait for video. {'\n'} The video will take 5 seconds of time</Text>
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             onPress={handleRecordVideo}
@@ -94,14 +94,16 @@ const Primary = () => {
           {videoPath && (
             <Video source={{ uri: videoPath }} style={styles.video} />
           )}
+          {videoPath && (
           <TouchableOpacity
             onPress={handleShareVideo}
             style={[styles.button, styles.share]}
           >
             <Text style={styles.buttonText}>Share</Text>
           </TouchableOpacity>
+          )}
         </View>
-        {/* <Text style={{ color:'#000',}}>The video will take 5 second of time</Text> */}
+        
       </View>
     </View>
   )

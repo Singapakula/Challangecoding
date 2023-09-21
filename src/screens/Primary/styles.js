@@ -29,7 +29,7 @@ export const styles=StyleSheet.create({
             flexDirection: 'row',
             justifyContent: 'space-around',
             alignItems: 'center',
-            marginTop: 50,
+            marginTop: 80,
           },
           button: {
             width: '25%',
