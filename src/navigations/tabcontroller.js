@@ -100,11 +100,10 @@ export default function Tabcontroller() {
         />
         <Tab.Screen
             name={'1'}
-            component={Postscreen}
+            component={Primary}
             options={{
                 // tabBarShowLabel: false,
                 tabBarIcon: ({ focused, color, size }) => (
-
                     <Pressable onPress={()=>navigation.navigate(Navigations.primary)}
                     style={{ top: -30, height: 60, width: 60, borderRadius: 30, backgroundColor: COLORS.gray2, justifyContent: 'center', opacity: 0.8, alignItems: 'center' }}>
                         <Image
